@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Formulario para subir imagen{% endblock %}
+
+{% block content %}
+
+<h2>Formulario para subir un archivo de imagen</h2>
+
+<form action="{{url_for('inicio')}}" method="POST" enctype="multipart/form-data" class="ancho">
+   {{form.csrf_token}}
+    <fieldset>
+        {{form.campo_subir.label}}<br />
+        {{form.campo_subir}}<br />
+        {{form.enviar}}
+    </fieldset>
+    
+</form>
+
+{% endblock %}
