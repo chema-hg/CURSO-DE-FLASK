@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Aplicación Base de Datos{% endblock%}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col md-12">
+            <div class="jumbotron p-3">
+                <h2>
+                    Manejando <b>Empleados</b> <a href="{{url_for('create_item')}}" class="btn btn-success float-right">
+                        <button type="button" class="btn btn-success">Añadir Nuevo Empleado</button>
+                    </a>
+                </h2>
+                <!--Cabecera de datos creada con una tabla-->
+                <table class="table">
+                    <tr class="table-dark">
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Telefono</th>
+                        <th>Acción</th>
+                    </tr>
+                    <!-- Generación de todos los registros de la base de datos con un bucle for.-->
+                    {% for item in empleados %}
+                    <tr>
+                        <td>{{item.id}}</td>
+                        <td>{{item.nombre}}</td>
+                        <td>{{item.correo}}</td>
+                        <td>{{item.telefono}}</td>
+                        <td>
+                            <!-- Boton Editar -->
+                            <a href="{{url_for('update_item', id=item.id)}}" class="btn btn-outline-warning">Editar</a>
+                            <!-- Boton Borrar -->
+                            <a href="{{url_for('delete_item', id=item.id)}}" class="btn btn-outline-danger"
+                                onclick="return confirm('¿Estás seguro de querer borrar el registro?')">Borrar
+                                <!--onclick hace que al presionar el boton retorne un mensaje de confirmación-->
+                            </a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}

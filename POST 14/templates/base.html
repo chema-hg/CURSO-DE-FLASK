@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sketchy/bootstrap.min.css">
+    <!-- MAIN CSS-->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>{% block title %}{% endblock %}</title>
+
+</head>
+
+<body>
+    <!--
+    <h1 class="display-5 text-center mt-4">Base de datos de empleados</h1>-->
+    <!--display=tamaño del texto, text-center lo centra y mt-margen top-->
+    <div class="jumbotron p-3">
+        <div class="well text-center">
+            <h1>Base de datos de empleados</h1>
+        </div>
+    </div>
+    <aside>{% block aside%}{%endblock%}</aside>
+    <section>
+        {% block content %}{% endblock %}
+    </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Crear Registro{% endblock %}
+{% block content%}
+<div id="formulario_crear">
+    <form action="{{url_for('create_item')}}" method="post">
+        <p style="text-align: center; font-size: 1.5em;">Nuevo Empleado</p>
+        <fieldset>
+            {{form.csrf_token()}}
+            {{form.nombre.label}}{{form.nombre}}<br />
+            {{form.correo.label}}{{form.correo}}
+            {%for error in form.correo.errors%}
+            <span style="color: red;">{{error}}</span>
+            {% endfor%}
+            <br />
+            {{form.telefono.label}}{{form.telefono}}<br />
+            &nbsp&nbsp&nbsp{{form.enviar}}
+        </fieldset>
+    </form>
+    <div>
+        <br />
+        &nbsp&nbsp&nbsp<a href="{{url_for('home')}}">Volver al inicio</a>
+    </div>
+</div>
+{% endblock%}
