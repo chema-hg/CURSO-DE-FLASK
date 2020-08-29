@@ -18,6 +18,8 @@ quieres usar un css propio-->
             <h2 class="form-signin-heading">Crear Cuenta</h2>
             <br />
             {{form.csrf_token}}
+            <!-- Los 3 siguientes líneas se pueden sustituir por una sola instrucción
+            {{wtf.quick_form(form)}} -->
             {{wtf.form_field(form.nombre_usuario)}}
             {{wtf.form_field(form.correo_electronico)}}
             {{wtf.form_field(form.contrasena)}}
