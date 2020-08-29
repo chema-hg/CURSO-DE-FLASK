@@ -1,0 +1,31 @@
+{% extends "bootstrap/base.html" %}
+# importamos la extensión de bootstrap para formularios
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Signup{% endblock%}
+
+<!--super es para no sobreescribir los estilos propios de bootstrap y si 
+quieres usar un css propio-->
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='mystyle.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="container" style="width: 27%;">
+    <div class="row">
+        <form action="{{url_for('signup')}}" method="POST">
+            <h2 class="form-signin-heading">Crear Cuenta</h2>
+            <br />
+            {{form.csrf_token}}
+            {{wtf.form_field(form.nombre_usuario)}}
+            {{wtf.form_field(form.correo_electronico)}}
+            {{wtf.form_field(form.contrasena)}}
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+            <br />
+        </form>
+        <a href="{{url_for('home')}}">Volver</a>
+    </div>
+</div>
+
+{% endblock %}
