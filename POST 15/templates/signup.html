@@ -19,7 +19,8 @@ quieres usar un css propio-->
             <br />
             {{form.csrf_token}}
             <!-- Los 3 siguientes líneas se pueden sustituir por una sola instrucción
-            {{wtf.quick_form(form)}} -->
+            {{wtf.quick_form(form)}} pero habria que definir en el formulario un campo del 
+            tipo SubmitField para que funcionase en vez del boton de envio -->
             {{wtf.form_field(form.nombre_usuario)}}
             {{wtf.form_field(form.correo_electronico)}}
             {{wtf.form_field(form.contrasena)}}
