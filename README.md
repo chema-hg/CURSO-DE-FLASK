@@ -12,4 +12,4 @@ Entrada 15. Construyendo un Login de usuarios con Flask-login, Flask-WTForms, Fl
 Entrada 16. Mostrando mensajes en pantalla con el método flash de Flask.<br />
 Entrada 17. Gestionando Cookies con Flask.<br />
 Entrada 18. Usar Flask Blueprint para estructurar las aplicaciones. Parte 1ª<br />
-Entrada 18. Usar Flask Blueprint para estructurar las aplicaciones. Parte 2ª.
+Entrada 19. Usar Flask Blueprint para estructurar las aplicaciones. Parte 2ª.
