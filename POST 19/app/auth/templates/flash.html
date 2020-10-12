@@ -1,9 +1,0 @@
-<!-- Para mostrar un mensaje en una vista con flash''' -->
-
-{% with mensajes = get_flashed_messages() %}
-    {% if mensajes %}
-        {% for mensaje in mensajes %}
-            {{ mensaje }}
-        {% endfor %}
-    {% endif %}
-{% endwith %}
