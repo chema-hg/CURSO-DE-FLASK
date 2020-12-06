@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Flask</title>
+    <link rel="stylesheet" href=" {{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <h1>Página de Flask para ponerse a punto</h1>
+    <p>Comenzamos hoy {{hoy.day}}-{{hoy.month}}-{{hoy.year}} con nuestra primera página html</p>
+    <hr />
+    <img src="{{url_for('static',filename='/imagenes/plinux.jpeg')}}" alt="imagen de pingüino linux">
+    <h2>¡Bienvenido! <strong>{{usuario}}</strong></h2>
+</body>
+</html>
