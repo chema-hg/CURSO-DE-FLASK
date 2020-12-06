@@ -6,6 +6,7 @@ Entrada 1. Introducción y primer proyecto.<br />
 Entrada 2. Enrutamiento y parámetros URL.<br />
 Entrada 3. Plantillas - Introducción.<br />
 Entrada 4. Plantillas - Variables.<br />
+Entrada 5. Plantillas - Bucles.<br />
 ...<br />
 Entrada 12. Como crear un formulario con Flask-WTF y ejemplos de diferentes campos.<br />
 Entrada 13. Subiendo archivos al servidor con Flask-WTF.<br />
