@@ -8,6 +8,7 @@ Entrada 3. Plantillas - Introducción.<br />
 Entrada 4. Plantillas - Variables.<br />
 Entrada 5. Plantillas - Bucles.<br />
 Entrada 6. Plantillas - Condicionales.<br />
+Entrada 7. Plantillas - Filtros.<br />
 ...<br />
 Entrada 12. Como crear un formulario con Flask-WTF y ejemplos de diferentes campos.<br />
 Entrada 13. Subiendo archivos al servidor con Flask-WTF.<br />
