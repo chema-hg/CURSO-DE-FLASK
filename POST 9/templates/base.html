@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}{%endblock%}</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tutorial de Flask</h1>
+        <hr>
+    </header>
+
+    <p>Barra de navegación insertada</p>
+    <!--Aqui irá la barra de navegación importada desde 
+    el archivo nav.html-->
+    {% include "nav.html"%}
+
+    <article>
+        {%block content%}{%endblock%}
+    </article>
+
+    <footer>
+        <hr>
+        <small>Este es el pie de página</small>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+<!-- Cargamos la plantilla padre-->
+{%extends "base.html"%}
+
+{%block title%}Página de Inicio{%endblock%}
+
+{%block content%}
+    <h2>Esta es la página de Inicio</h2>
+    {%if nombre%}
+        <h3>Bienvenido {{nombre|title}}</h3>
+        <p>Estás en la página inicial</p>
+    {%else%}
+        <p>Estás en la página Inicial</p>
+    {%endif%}
+{%endblock%}   
