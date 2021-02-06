@@ -1,6 +1,6 @@
 # CURSO-DE-FLASK
 CURSO COMPLETO PARA APRENDER FLASK
-Puedes encontrar el curso completo en https://novatilloenpython.blogspot.com/
+Puedes encontrar el curso completo en https://novatilloenpython.blogspot.com/2020/06/flask-introduccion-y-primer-proyecto.html
 
 Entrada 1. Introducción y primer proyecto.<br />
 Entrada 2. Enrutamiento y parámetros URL.<br />
