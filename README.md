@@ -12,6 +12,7 @@ Entrada 7. Plantillas - Filtros.<br />
 Entrada 8. Peticiones HTTP y métodos GET y POST<br />
 Entrada 9. Herencia de Plantillas <br/>
 Entrada 10. Plantillas con Bootstrap y Flask-Bootstrap <br/>
+Entrada 11. Formularios en Flask <br />
 ...<br />
 Entrada 12. Como crear un formulario con Flask-WTF y ejemplos de diferentes campos.<br />
 Entrada 13. Subiendo archivos al servidor con Flask-WTF.<br />
