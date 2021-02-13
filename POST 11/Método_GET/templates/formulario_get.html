@@ -1,0 +1,32 @@
+{%extends "base.html"%}
+
+{%block title%}Calculadora Método GET{%endblock%}
+
+{%block content%}
+
+<h1>Calculadora</h1>
+<!-- Construimos el formulario -->
+<form action="{{url_for('calculadora_get')}}" method="GET">
+    <fieldset>
+        <label for="primer_numero">Primer Número</label>
+        <input type="text" name="primer_numero" id="primer_numero">
+        <br>
+        <label for="segundo_numero">Segundo Número</label>
+        <input type="text" name="segundo_numero" id="segundo_numero">
+        <hr>
+        <label for="operacion">Operación a Realizar</label>
+        <select name="operacion" id="operacion">
+            <option value="+">Sumar</option>
+            <option value="-">Restar</option>
+            <option value="*">Multiplicar</option>
+            <option value="/">Dividir</option>
+        </select>
+        <br>
+        <input type="submit" value="Enviar">
+    </fieldset>
+
+</form>
+
+<p><strong>Resultado</strong> = {{resultado}}</p>
+
+{%endblock%}
