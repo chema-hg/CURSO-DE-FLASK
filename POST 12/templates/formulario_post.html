@@ -1,0 +1,45 @@
+{%extends "base.html"%}
+
+{%block title%}Calculadora Método POST{%endblock%}
+
+{%block content%}
+
+<h1>Calculadora</h1>
+<!-- Construimos el formulario -->
+<form action="{{url_for('calculadora_post')}}" method="POST" novalidate>
+    <!-- Para usar el formulario usando un bucle for
+        {% for field in form %}
+        {{field.label()}}{{field()}}
+        <br />
+        {% endfor %} -->
+
+    <fieldset>
+        {{form.csrf_token}}
+
+        {{form.primer_numero.label}}&nbsp{{form.primer_numero(placeholder="Introduce un número")}}
+        <!-- Podríamos definir los campos de error para cada campo de forma individual
+            {% for error in form.primer_numero.errors %}
+            <span style="color: red;">{{error}}</span>
+            {% endfor %}
+            -->
+        <br />
+        {{form.segundo_numero.label}}&nbsp{{form.segundo_numero(autocomplete="off")}}
+        <br />
+        {{form.operacion.label}}&nbsp{{form.operacion}}
+        <br />
+        <!--Campo de prueba con codigo html-->
+        <label for="prueba">Campo de Prueba</label>
+        <input type="color" name="color" id="prueba" />
+        {{form.enviar}}
+        <br />
+        <p><strong>Resultado</strong> = {{resultado}}</p>
+    </fieldset>
+
+</form>
+<!-- Muestra el tipo de error si se ha introducido datos invalidaos en un campo-->
+{% for campo, error in form.errors.items() %}
+{{form[campo].label}}:{{', '.join(error)}}
+{% endfor %}
+
+
+{% endblock %}
