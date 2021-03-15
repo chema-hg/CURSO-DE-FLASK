@@ -18,7 +18,7 @@ app.config.from_object(config)
 Bootstrap(app)
 db = SQLAlchemy(app)
 # Usando Flask-Login
-gestor_inicio_sesion = LoginManager()
+gestor_inicio_sesion = LoginManager(app)
 # Si le queremos indicar cual es la aplicación principal gestor_inicio_sesion.init_app(app)
 gestor_inicio_sesion.login_view = 'login'
 
