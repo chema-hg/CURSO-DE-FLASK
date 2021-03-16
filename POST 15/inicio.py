@@ -1,5 +1,4 @@
 from flask import Flask, render_template, redirect, url_for, request, flash
-#import config
 from flask_bootstrap import Bootstrap
 # importando clases de los formularios
 import forms
