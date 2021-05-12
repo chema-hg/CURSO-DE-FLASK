@@ -30,7 +30,7 @@ class Formulario_de_Registro(FlaskForm):
     correo_electronico = StringField('Correo Electrónico', validators=[
                                      InputRequired(), Email(message="Email no válido"), Length(max=50)])
     contrasena = PasswordField('Contraseña', validators=[
-                               InputRequired(), Length(min=8, max=80, message='Longitud mínima de 8 caracteres y máxima de 80')])
+                               InputRequired(), Length(min=8, max=50, message='Longitud mínima de 8 caracteres y máxima de 50')])
     # El maximo de 80 en la longitud de la contraseña es porque posteriormente la codificaremos
     # con un algoritmo sha-256
     contrasena2 = PasswordField('Repite la Contraseña', validators=[
