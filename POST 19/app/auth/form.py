@@ -18,7 +18,7 @@ class Formulario_de_Login(FlaskForm):
                                  InputRequired(), Length(min=4, max=15)])
     # Campo contrasena
     contrasena = PasswordField('Contraseña', validators=[
-                               InputRequired(message='Campo obligatorio'), Length(min=8, max=80)])
+                               InputRequired(message='Campo obligatorio'), Length(min=8, max=50)])
     # Campo recuerdame es un checkbox
     recuerdame = BooleanField('Recuérdame')
 
@@ -29,6 +29,5 @@ class Formulario_de_Registro(FlaskForm):
     correo_electronico = StringField('Correo Electrónico', validators=[
                                      InputRequired(), Email(message="Email no válido"), Length(max=50)])
     contrasena = PasswordField('Contraseña', validators=[
-                               InputRequired(), Length(min=8, max=80)])
-    # El maximo de 80 en la longitud de la contraseña es porque posteriormente la codificaremos
-    # con un algoritmo sha-256
+                               InputRequired(), Length(min=8, max=50)])
+   
