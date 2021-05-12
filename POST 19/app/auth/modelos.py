@@ -10,7 +10,7 @@ class Usuario(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nombre_usuario = db.Column(db.String(15), unique=True)
     correo_electronico = db.Column(db.String(50), unique=True)
-    contrasena = db.Column(db.String(80))
+    contrasena = db.Column(db.String(94))
 
 
 # ----------------------------------------------------------------------------------
