@@ -11,8 +11,8 @@ DEBUG = False
 
 # Base de datos
 # Cadena de conexion
-SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://app_user:password@localhost/mibase'
-# tambien seria posible usar SQLALCHEMY_DATABASE_URI = 'mariadb+pymysql://app_user:password@localhost/mibase'
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://usuario:password@localhost/mibase'
+# tambien seria posible usar SQLALCHEMY_DATABASE_URI = 'mariadb+pymysql://usuario:password@localhost/mibase'
 #SQLALCHEMY_DATABASE_URI = f'sqlite:///{PWD}/base_de_datos/dbase.db'
 # Desactivar mensajes de SQLALCHEMY
 SQLALCHEMY_TRACK_MODIFICATIONS = False
