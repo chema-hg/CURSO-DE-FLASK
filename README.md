@@ -22,5 +22,5 @@ Entrada 17. Gestionando Cookies con Flask.<br />
 Entrada 18. Usar Flask Blueprint para estructurar las aplicaciones. Parte 1ª<br />
 Entrada 19. Usar Flask Blueprint para estructurar las aplicaciones. Parte 2ª.<br />
 Entrada 20. Desplegar una aplicación en Flask con Gunicorn y Nginx.<br />
-Entrada 20. APENDICE. Uso de Mysql o MariaDb en un proyecto en Flask
+Entrada 20. APENDICE. Uso de Mysql o MariaDb en un proyecto en Flask.<br />
 Entrada 21. Desplegar una aplicación de Flask en Heroku
